@@ -52,8 +52,15 @@ Seluruh skrip SQL tersimpan rapi di dalam folder [`queries/ecommerce_analysis.sq
 ---
 
 ## 📁 Struktur Repository
+
 ```text
 thelook-ecommerce-sql-analysis/
-├── README.md                        # Dokumentasi utama proyek, dataset, pertanyaan bisnis, & insight
-└── queries/
-    └── ecommerce_analysis.sql       # Kumpulan query SQL untuk menjawab 5 pertanyaan bisnis
+├── README.md                                 # Dokumentasi utama proyek, dataset, pertanyaan bisnis, & insight
+├── queries/
+│   └── ecommerce_analysis.sql                # Kumpulan query SQL untuk menjawab 5 pertanyaan bisnis
+└── results/
+    ├── hasil_1_analisis_produk.csv           # Output Query 1: 20 data produk pertama
+    ├── hasil_2_produk_premium.csv            # Output Query 2: Daftar produk dengan retail_price > 100
+    ├── hasil_3_evaluasi_kategori.csv         # Output Query 3: Jumlah produk (SKU) per kategori
+    ├── hasil_4_pelanggan_pesanan.csv         # Output Query 4: Data pelanggan beserta status pesanannya
+    └── hasil_5_penjualan_kategori.csv        # Output Query 5: Total nilai penjualan per kategori
